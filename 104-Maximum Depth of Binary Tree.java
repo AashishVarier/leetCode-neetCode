@@ -15,6 +15,8 @@
  *     }
  * }
  */
+ 
+//DFS with recursion 
 class Solution {
   
     public int maxDepth(TreeNode root) {
@@ -32,3 +34,8 @@ class Solution {
         return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
 }
+
+//DFS without recursion
+
+
+//BFS without recursion
