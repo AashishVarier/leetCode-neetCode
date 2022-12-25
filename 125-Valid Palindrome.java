@@ -33,7 +33,7 @@ class Solution {
 }
 
 
-// without .isLetterOrDigit() and checking reverse string
+// checking reverse string
 class Solution {
     public boolean isPalindrome(String s) {
         
