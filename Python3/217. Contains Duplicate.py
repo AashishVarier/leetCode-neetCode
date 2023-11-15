@@ -19,4 +19,16 @@ class Solution:
         
         return False
 
-        
+##NOTES:
+- output: True if value repeats else False
+- input: array / List
+- constraints: List size, values of list range
+- Soln:
+	- Brute forece : two pointer 
+			- T:O(n^2), S:O(1)
+			- drawback: T:O(n^2)
+
+	
+	- Using Data Structure : Set
+			- T: O(n), S: O(n)
+			- drawback: S: O(n)
