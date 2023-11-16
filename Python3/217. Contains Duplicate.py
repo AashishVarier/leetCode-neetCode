@@ -20,7 +20,7 @@ class Solution:
         return False
 
 ##NOTES:
-- output: True if value repeats else False
+- output: True if value repeats at least twice else False
 - input: array / List
 - constraints: List size, values of list range
 - Soln:
@@ -32,3 +32,5 @@ class Solution:
 	- Using Data Structure : Set
 			- T: O(n), S: O(n)
 			- drawback: S: O(n)
+    
+    - Using sorting
