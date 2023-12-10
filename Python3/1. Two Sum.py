@@ -10,6 +10,14 @@ class Solution:
                         ans.append(j)
                         return ans
 
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        checkMap = {}
+        for i,n in enumerate(nums):
+            if((target - n) in checkMap):
+                return [i,checkMap[target - n]]
+            checkMap[n] = i
+
 
 ##NOTE
 - output: indices of tow numbers
