@@ -11,6 +11,13 @@ class Solution:
             countT[t[i]] = 1 + countT.get(t[i], 0)
         return countS == countT
 
+##soln using internal function
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        
+        return sorted(s) ==  sorted(t)
 
 ##NOTE
 - output: True if anagram else False

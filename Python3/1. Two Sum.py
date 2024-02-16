@@ -12,11 +12,15 @@ class Solution:
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        checkMap = {}
-        for i,n in enumerate(nums):
-            if((target - n) in checkMap):
-                return [i,checkMap[target - n]]
-            checkMap[n] = i
+        
+        checkMap = {} # diff, index
+
+        for i in range(0, len(nums)):
+            diff = target - nums[i]
+            if diff in checkMap:
+                return [i , checkMap[diff]]
+
+            checkMap[nums[i]] = i
 
 
 ##NOTE
