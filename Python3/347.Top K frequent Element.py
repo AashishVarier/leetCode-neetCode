@@ -11,6 +11,8 @@ class Solution:
             res.append(pyListComprehension[l])
         
         return res
+
+#T: o(n  + nlogn)
             
             
 

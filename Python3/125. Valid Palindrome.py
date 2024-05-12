@@ -37,17 +37,17 @@ class Solution:
         return new == new[::-1]  
 
 ##NOTE
-- output: true if palindrome, else false
-- input: String S
-- constraints: not null, printable ASCII char, ignore case, only alphanum
--Soln:
-	- 2 ptr
-			- T:O(n^2), S: O(1)
-			- drawback: 
+#- output: true if palindrome, else false
+#- input: String S
+#- constraints: not null, printable ASCII char, ignore case, only alphanum
+#-Soln:
+	#- 2 ptr
+		#	- T:O(n^2), S: O(1)
+		#	- drawback: 
 			
 					
 					
-	- Data Structure: reversal 
-			-T:O(n) , S: O(n)
-			- drawback: 
+	#- Data Structure: reversal 
+		#	-T:O(n) , S: O(n)
+		#	- drawback: 
 		

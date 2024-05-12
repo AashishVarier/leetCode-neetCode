@@ -20,17 +20,17 @@ class Solution:
         return False
 
 ##NOTES:
-- output: True if value repeats at least twice else False
-- input: array / List
-- constraints: List size, values of list range
-- Soln:
-	- Brute forece : two pointer 
-			- T:O(n^2), S:O(1)
-			- drawback: T:O(n^2)
+#- output: True if value repeats at least twice else False
+##- input: array / List
+#- constraints: List size, values of list range
+#- Soln:
+	#- Brute forece : two pointer 
+	#		- T:O(n^2), S:O(1)
+	#		- drawback: T:O(n^2)
 
 	
-	- Using Data Structure : Set
-			- T: O(n), S: O(n)
-			- drawback: S: O(n)
+	#- Using Data Structure : Set
+	#		- T: O(n), S: O(n)
+	#		- drawback: S: O(n)
     
-    - Using sorting
+    #- Using sorting

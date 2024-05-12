@@ -24,15 +24,15 @@ class Solution:
 
 
 ##NOTE
-- output: indices of tow numbers
-- input: array of integers
-- constraints: ip has one soln, no repition, return answere in any order, atleast 2 num in array
--Soln:
-	- 2 ptr
-			- T:O(n^2), S:O(1)
-			- drawback: T:O(n^2)
-			- check: 
-	- Data Structure : HasMap
-			- T:O(n), S:O(n)
-			- drawback: S:O(n)
-			- check: 
+#- output: indices of tow numbers
+#- input: array of integers
+#- constraints: ip has one soln, no repition, return answere in any order, atleast 2 num in array
+#-Soln:
+#	- 2 ptr
+			#- T:O(n^2), S:O(1)
+			#- drawback: T:O(n^2)
+			#- check: 
+	#- Data Structure : HasMap
+		#	- T:O(n), S:O(n)
+		#	- drawback: S:O(n)
+		#	- check: 

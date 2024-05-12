@@ -20,17 +20,17 @@ class Solution:
         return sorted(s) ==  sorted(t)
 
 ##NOTE
-- output: True if anagram else False
-- input: two strings s & t
-- constraints: s & t lowercase English, not null
--Soln:
-	- Data Structure: HashMap
-			- T:O(n) , S:O(s+t)
-			- drawback: S:O(s+t)
+#- output: True if anagram else False
+#- input: two strings s & t
+#- constraints: s & t lowercase English, not null
+#-Soln:
+#	- Data Structure: HashMap
+#			- T:O(n) , S:O(s+t)
+#			- drawback: S:O(s+t)
 
 			
 	
-	- sort string:
-			- T: O(nlogn) bubble sort, S: O(n) space for sort
-			- drawback : sorting
+#	- sort string:
+#			- T: O(nlogn) bubble sort, S: O(n) space for sort
+#			- drawback : sorting
 
