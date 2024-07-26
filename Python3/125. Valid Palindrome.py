@@ -24,17 +24,17 @@ class Solution:
 
 #using inbuilt function
     class Solution:
-    def isPalindrome(self, s: str) -> bool:
+        def isPalindrome(self, s: str) -> bool:
         
-        new = ""
-        if s == "":
-            return True
-        
-        for i in s:
-            if i.isalnum():
-                new += i.lower()
+            new = ""
+            if s == "":
+                return True
+            
+            for i in s:
+                if i.isalnum():
+                    new += i.lower()
 
-        return new == new[::-1]  
+            return new == new[::-1]  
 
 ##NOTE
 #- output: true if palindrome, else false
