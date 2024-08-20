@@ -1,7 +1,7 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         ans = []
-        nums.sort() #sort O(nlogn) Tims Sorting algo take S: O(n)
+        nums.sort() #sort O(nlogn) Tims Sorting algo take S: O(n); list.sort() sorts in place, sorted() created new list
 
         for i, v in enumerate(nums): #loop 1
             l,r = i+1 , len(nums)-1
