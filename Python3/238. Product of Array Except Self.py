@@ -12,7 +12,7 @@ class Solution:
         
         return answer
 
-# t = O(n^2)
+# t = O(n^2) S:O(n)
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         #1[1,2,3,4]1
@@ -39,7 +39,7 @@ class Solution:
         
         return post
 
-# t = O(n)
+# t = O(n) S= O(1) assuming res is not considered
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         #[1,2,3,4]
@@ -54,5 +54,31 @@ class Solution:
         for i in range(len(nums )-1, -1, -1):
             res[i] *=post
             post *= nums[i]
+        
+        return res
+
+# T: O(n) S:O(n)
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        #[1, 2, 3, 4] 
+        pre = [1] * len(nums) #[1,1,2,6]
+        suf = [1] * len(nums) #[24,12,4,1]
+        res =[] #[24,12,8,6]
+        for i in range(len(nums)):
+            if i == 0:
+                pre[i] = 1
+            else:
+                pre[i] = pre[i -1] * nums[i-1]
+
+        for j in range((len(nums) -1), -1, -1 ):
+            if j == len(nums) -1:
+                suf[j] = 1
+            else:
+                suf[j] = suf[j +1] * nums[j+1]
+
+        print(suf)
+        print(pre)
+        for k in range(len(nums)):
+            res.append(suf[k]*pre[k])
         
         return res

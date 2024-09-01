@@ -6,7 +6,7 @@ class Solution:
         for i in nums:
             countDict[i] = 1 + countDict.get(i, 0)
             
-        pyListComprehension = [j for j in sorted(countDict, key = countDict.get, reverse = True)] #pyListComprehension returns type list , sorted(a, key with which to sort, boolean for reverse)
+        pyListComprehension = [j for j in sorted(countDict, key = countDict.get, reverse = True)] #pyListComprehension returns type list  ## By default, iterating over a dict iterates over its keys. ### sorted(a, key with which to sort, boolean for reverse) The key argument to sorted is a callable (e.g. a function) which takes one argument. https://stackoverflow.com/questions/39496096/understanding-dictionary-get-in-python -   that is,  it is 'countDict.get' here , so for each key in the dictionary, countDict.get(key) will be executed and the result of that will be used in comparison.
         for l in range(k):
             res.append(pyListComprehension[l])
         
