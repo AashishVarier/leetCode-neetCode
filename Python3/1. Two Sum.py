@@ -22,7 +22,15 @@ class Solution:
 
             checkMap[nums[i]] = i
 
-
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        diffD = {}
+        for i,v in enumerate(nums):
+            # print(i, "- ", v)
+            diff = target - v
+            if diff in diffD:
+                return [i, diffD[diff]]
+            diffD[v] = i
 ##NOTE
 #- output: indices of tow numbers
 #- input: array of integers
