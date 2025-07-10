@@ -42,3 +42,4 @@ class Solution:
                         res.add(tuple(tmp))
         return [list(i) for i in res]
         #T : O(n^3)
+        #S:  O(N) (or O(M), where M is the number of unique triplets
